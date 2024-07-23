@@ -32,7 +32,6 @@ export default function Map({}: IProps) {
             {...viewport} 
             width="100vw"
             height="100vh"
-            // mapboxAccessToken="pk.eyJ1IjoicnNwaWxsYW5lMSIsImEiOiJjbHl2djduYjkxNTIwMmlxc2Zlb3F0NjVzIn0.a72pM95N8-UIewV-bSh9Gw"
             mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_TOKEN}
             onMove={evt => handleViewportChange(evt.viewport)}
             mapStyle="mapbox://styles/mapbox/outdoors-v12"
