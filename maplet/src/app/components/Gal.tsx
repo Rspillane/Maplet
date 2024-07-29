@@ -24,7 +24,7 @@ export default function Gallery() {
 
   return (
     <div>
-      <h1>Gallery</h1>
+      <h2>Action Bar</h2>
       <div style={{ display: "flex", flexDirection: "row" }}>
         {images.map((url, index) => (
           <div key={url} style={{ margin: 10, position: 'relative', width: '300px', height: '500px' }}>

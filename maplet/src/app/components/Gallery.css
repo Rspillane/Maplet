@@ -1,0 +1,32 @@
+.gallery-viewport {
+    position: relative; /* Creates a new positioning context for the button */
+    overflow-y: scroll; /* Makes the content inside the div scrollable */
+    height: 300px; /* Set your desired height */
+    border: 1px solid #ccc; /* Optional: for visual reference */
+}
+
+.filter-toolbar {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the button perfectly */
+    z-index: 100;
+}
+
+.new-point-action {
+    position: absolute; /* Positions the button relative to the nearest positioned ancestor */
+    bottom: 10px; /* Distance from the bottom of the container */
+    left: 50%; /* Centers the button horizontally */
+    transform: translateX(-50%); /* Centers the button perfectly */
+    z-index: 100; /* Ensures the button is above the scrollable content */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-point-action:hover {
+    background-color: #0056b3; /* Optional: darker color on hover */
+}

@@ -3,6 +3,7 @@
 import styles from "./page.module.css";
 import Map from "./components/Map";
 import Gallery from "./components/Gallery";
+import DragMap from "./components/DragMap";
 
 
 export default function Home() {
