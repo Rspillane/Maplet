@@ -8,7 +8,7 @@ import "./Gallery.css";
 export default function Gallery() {
 
     return (
-        <div className="gallery-viewport" style={{width: "50vw", height: "100vh"}}>
+        <div className="gallery-viewport" style={{width: "100vw", height: "50vh"}}>
             <div className="filter-toolbar">
                 <ToolbarDemo />
             </div>

@@ -1,0 +1,57 @@
+/* reset */
+input {
+    all: unset;
+  }
+  
+  .LabelRoot {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 35px;
+    color: black;
+  }
+  
+  .Input {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 0 15px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 1;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(15, 15, 15, 0.455);
+  }
+  .Input:focus {
+    box-shadow: 0 0 0 2px rgb(5, 5, 5);
+    border: 1px black;
+  }
+  .Input::selection {
+    background-color: white;
+    color: rgb(0, 0, 0);
+  }
+  
+  .map-viewport {
+      position: relative;
+  }
+  
+  .map-searchbox {
+      position: absolute;
+      z-index: 100;
+      display: flex;
+      width: 100%;
+      padding-inline: 13%;
+      justify-content: center;
+      bottom: 35px;
+  }
+
+  /* .avatar {
+    position: absolute;
+    top: 5%;
+    height: 100%;
+    right: 10px;
+  } */
+  button {
+    all: unset;
+  }

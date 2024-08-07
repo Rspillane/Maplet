@@ -9,7 +9,7 @@ import DragMap from "./components/DragMap";
 export default function Home() {
   return (
     <main className={styles.main}>
-          <Gallery />
+          {/* <Gallery /> */}
           <Map />
     </main>
   );

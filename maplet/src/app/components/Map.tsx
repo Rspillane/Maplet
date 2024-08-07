@@ -1,9 +1,12 @@
-import { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import ReactMapGL, { Marker, Popup, ViewState } from "react-map-gl";
-import "mapbox-gl/dist/mapbox-gl.css"
+
+import Tabs from "./Tabs/Tabs";
+import Search from "./Search/Search";
+
 import * as parkData from "../../data/data.json";
 
-
+import "mapbox-gl/dist/mapbox-gl.css";
 
 interface IProps {}
 
@@ -36,7 +39,8 @@ export default function Map({}: IProps) {
     
 
     return (
-        <div className="map-viewport" style={{width: "50vw", height: "100vh"}}>
+        <div className="map-viewport" style={{width: "100vw", height: "100vh"}}>
+          <Search />
           <ReactMapGL
             ref={mapRef} 
             {...viewport} 
@@ -79,6 +83,9 @@ export default function Map({}: IProps) {
           </Popup>
         ) : null}
           </ReactMapGL>
+          {/* <Tabs /> */}
+          {/* Bottom Drawer (Account) */}
+          {/* Swipeable Bottom Drawer (Feature) */}
         </div>
     );
   }

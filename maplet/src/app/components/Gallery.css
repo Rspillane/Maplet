@@ -5,9 +5,20 @@
     border: 1px solid #ccc; /* Optional: for visual reference */
 }
 
+.preview-window-content {
+    background: linear-gradient(
+        to bottom,
+        rgba(102, 102, 102, 0.1), /* Red with 80% opacity */
+        rgba(255, 255, 0, 0) 50%, /* Yellow with 80% opacity */
+        rgba(102, 102, 102, 0.1) /* Blue with 80% opacity */
+    );
+    width: 100%;
+    height: 100%;
+}
+
 .filter-toolbar {
     position: absolute;
-    top: 10px;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%); /* Centers the button perfectly */
     z-index: 100;
